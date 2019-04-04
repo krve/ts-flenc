@@ -1,7 +1,7 @@
 {
-  "name": "flenc",
+  "name": "ts-flenc",
   "version": "0.0.1",
-  "description": "A JavaScript file encryption libary",
+  "description": "A TypeScript file encryption libary",
   "main": "dist/index.js",
   "types": "dist/index.d.ts",
   "author": "Kristoffer Vestergaard",
