@@ -45,6 +45,13 @@ export default class FileEncrypter {
         );
     }
 
+    public async decryptToBlob(encryptedValue): Promise<Blob> {
+        const buffer = this.decrypt(encryptedValue);
+
+        // @ts-ignore
+        return new Blob([new DataView(buffer)]);
+    }
+
     public getRawSecret(): Uint8Array {
         return this.keychain.getRawSecret();
     }
