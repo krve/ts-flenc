@@ -1,7 +1,7 @@
-import {Keychain} from '../index';
+import { Keychain } from '../index';
 
 test('It can get the raw secret', () => {
-    let keychain = new Keychain;
+    let keychain = new Keychain();
 
     expect(keychain.getRawSecret()).toBeDefined();
 });
